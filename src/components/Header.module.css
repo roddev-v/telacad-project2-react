@@ -1,0 +1,16 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ce8a8a;
+    color: #ce8a8a;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.link-buttons {
+    margin: 0 4px;
+}
