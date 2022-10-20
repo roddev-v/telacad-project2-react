@@ -1,16 +1,12 @@
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-bottom: 1px solid #ce8a8a;
-    color: #ce8a8a;
+.logo {
+  width: 150px;
+  height: auto;
 }
 
-.display-inline-block {
-    display: inline-block;
+.links-wrapper {
+    width: 300px;
 }
 
-.link-buttons {
-    margin: 0 4px;
+.actions-wrapper {
+    width: 140px;
 }
