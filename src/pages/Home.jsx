@@ -3,7 +3,7 @@ import HomeCategory from "../components/HomeCategory";
 import Layout from "../components/Layout";
 import products from "../utils/products.json";
 
-function Home() {
+function Home({}) {
   const categoriesKeys = Object.keys(products);
   const categories = Object.values(products);
 

@@ -5,18 +5,25 @@ import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
 import Category from "./pages/Category";
 
-function App() {
-  return (
-    <>
-      <Switch>
-        <Route path="/" component={Home} exact></Route>
-        <Route path="/about" component={About}></Route>
-        <Route path="/login" component={Login}></Route>
-        <Route path="/category/:categoryName" component={Category}></Route>
-        <Route component={PageNotFound}></Route>
-      </Switch>
-    </>
-  );
+import { Component } from "react";
+import Product from "./pages/Product";
+
+
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Switch>
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/about" component={About}></Route>
+          <Route path="/login" component={Login}></Route>
+          <Route path="/category/:categoryName" component={Category}></Route>
+          <Route path="/products/:categoryName/:productId" component={Product}></Route>
+          <Route component={PageNotFound}></Route>
+        </Switch>
+      </>
+    );
+  }
 }
 
 export default App;
