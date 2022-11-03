@@ -4,6 +4,7 @@ import { app } from "../firebase-init";
 import css from "./Header.module.css";
 import { getAuth, GoogleAuthProvider,signInWithPopup, signOut, onAuthStateChanged } from 'firebase/auth';
 import { Component } from "react";
+import CartIcon from "./CartIcon";
 
 class Header extends Component {
 
@@ -61,6 +62,7 @@ class Header extends Component {
                   Sign in
                 </button>
             }
+            <CartIcon/>
           </div>
         </div>
       </div>

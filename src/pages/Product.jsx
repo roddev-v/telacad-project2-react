@@ -1,3 +1,6 @@
+import { connect } from "react-redux";
+import {addToCart} from '../redux/actions/product.actions';
+
 import Layout from "../components/Layout";
 import products from "../utils/products.json";
 
@@ -22,11 +25,18 @@ function Product(props) {
                     <p>Culoare: {product.colour}</p>
                     <p>Material: {product.material}</p>
                     <br></br>
-                    <button className="btn btn-secondary">Add to cart</button>
+                    <button onClick={() => props.addItemToCart(product)} className="btn btn-secondary">Add to cart</button>
                 </div>
             </div>
         </div>
     </Layout>
 }
 
-export default Product;
+
+function dispatchToProps(dispatch) {
+    return {
+        addItemToCart: (product) => dispatch(addToCart(product))
+    }
+}
+
+export default connect(null, dispatchToProps)(Product);
