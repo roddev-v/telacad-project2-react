@@ -13,10 +13,10 @@ function Product(props) {
     return <Layout>
         <div className="container">
             <div className="row">
-                <div className="col-4">
+                <div className="col-12 col-sm-6">
                     <img src={product.image} alt="" />
                 </div>
-                <div className="col-8">
+                <div className="col-12 col-sm-6">
                     <h1>{product.name}</h1>
                     <h4>{product.brand}</h4>
                     <br></br>
