@@ -1,6 +1,5 @@
 import { ProductActions } from "../actions/product.actions";
 
-// {product: {} , quantity: 1}
 
 const initialState = {
     cartProducts: []

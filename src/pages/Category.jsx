@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Layout from "../components/Layout";
 import ProductItem from "../components/ProductItem";
 import products from "../utils/products.json";
